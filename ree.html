@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width:100px;
+      height: 100px;
+      background: red;
+      border: 5px solid blue;
+      transition-duration:2s ;
+      text-align: center;
+      justify-content: center;
+      text-decoration-line: underline;
+      padding-top: 30px;
+      transition-property:unset;
+      display: inline-block;
+      
+    }
+
+    #translate:hover{
+      transform: translate(30px,90px);
+    }
+    #rotate:hover{
+      transform: rotate(-180deg);
+    }
+    #scale:hover{
+      transform: scale(.5);
+    }
+    #skew:hover{
+      transform:skew(30deg,30deg);
+      
+    }
+  </style>
+</head>
+<body>
+  <p>tap</p>
+  <div id="translate">Translate me</div>
+  
+  <div id="rotate">rotate</div>
+  
+  <div id="scale">scale</div>
+  
+  <div id="skew">skew</div>
+  <input type="color" name="mg" id="">
+
+  <script>
+
+    let firstName = "Degaryu";
+    let secondName = "Naing";
+    let fullName = firstName+" "+ secondName;
+    let phonePrice = '၁၂ သိန်း' ;
+    let showHeight = "My height is 6'";
+    let coinHeight = 'Coin height is 1"';
+    let showLeight = "height 6'7\""
+    let height = ` 7'3" 5'3'4" ` ;
+
+    let box = [34 , "apple" , "odfij" , false , 3.4];
+
+  </script>
+</body>
+</html>

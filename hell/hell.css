@@ -1,0 +1,28 @@
+.ali{
+    
+    border: 3px dashed cyan;
+    padding : 20px;
+    margin: 50px;
+    border-radius: 30px;
+    
+    width: 500px;
+    height: 500px;
+ 
+   font-language-override:initial;
+
+} 
+
+.ali:hover{
+    opacity: 8px;
+}
+
+ul{
+    list-style-type: lower-latin;
+}
+
+.box1 , .box2 , .box3 , .box4{
+    border: 3px double blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
