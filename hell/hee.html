@@ -56,11 +56,11 @@
     cursor: pointer;
   } */
   button::before{
-    content: '=>';
+    content: '|^';
     color: aqua;
   }
   button::after{
-    content: '=>';
+    content: '*';
     color: yellow;
   }
   .container{
@@ -72,10 +72,55 @@
    
     width: 30em;
     height: 30em;
-   border: 2px solid red;
+   border: 2px solid rgba(255, 0, 0, 0.562);
     align-items: flex-end;
    
                        
+  }
+
+  
+  button{
+    border-radius: 50%;
+    padding: 120px 50px ;
+    margin: 50px 0 50px 120px;
+    width: 400px;
+    height: 400px;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-variant: small-caps;
+    
+
+   
+  }
+  @keyframes butcher{
+    from{
+      left: 0;
+      top: 0;
+    }
+    to{
+      left: 300px;
+      top: 300px;
+    }
+  }
+  .fire{
+    position: relative;
+    animation-duration: 3s;
+    animation-name: butcher;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 3;
+    animation-play-state: running;
+
+  }
+
+  button:hover{
+    
+    box-shadow: 4px 5px 4px #ff0505;
+  }
+  
+  button:visited{
+    color: darkgreen;
+    background-color: bluev;
+    content: 'ok lar baby';
   }
        
 
@@ -128,6 +173,10 @@
     transform: rotateX(90deg);
     
   }
+  a:visited{
+    color: blueviolet;
+
+  }
   </style>
 </head>
 <body>
@@ -150,8 +199,8 @@
 
   <a href="https://www.google.com/" >google</a>
 <button>hhhh</button> -->
-<button class="btn-danger">Submit</button>
-<div class="container">
+<button class="btn-danger fire">FIRE</button>
+<!-- <div class="container">
   <div class="item item_1">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
@@ -161,7 +210,7 @@
   <!-- <div class="item">6</div>
   <div class="item">7</div>
   <div class="item">8</div>
-  <div class="item">9</div>
+  <!-- <div class="item">9</div>
   <div class="item">10</div>
   <div class="item">11</div>
   <div class="item">12</div>
@@ -182,6 +231,19 @@
   <img  src="http://placeimg.com/640/480/business">
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nulla repellendus facilis rerum quas ipsam ducimus atque sit, in veniam eos quae ab mollitia inventore architecto debitis nisi? Quos, optio!</p>
 <img src="http://placeimg.com/640/480/sports" >
+<br>
+<br><br> --> -->
+<a href="http://www.google.com" style="text-decoration: none;">google</a>
+<fieldset>
+  <legend>We are living on the rune</legend>
+  <label for="pilot">Pilot</label>
+  <select name="pilot" id="pilot" >
+    <option value="awreness">Awreness</option>
+    <option value="Environment">Environment</option>
+  </select>
+  <br><br><br>
+  
+</fieldset>
 </div>
 </body>
 </html>
